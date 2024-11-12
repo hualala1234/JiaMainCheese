@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- add -->
+    <link rel="stylesheet" href="jquery-ui.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="jquery-ui.min.js"></script>  
+
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- add -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="script.js" type="text/javascript"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Chivo:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!--動畫引入-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+h3{
+    font-family:"Abril Fatface", serif;
+    letter-spacing: 10px;
+    font-size: 35px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="top_header shadow">
+    <div class="logo_box">
+        
+
+        <div class="ani_box">
+            <div class="anim_box">
+                <div class="anim_box abox_1"></div>
+            </div>
+
+            <div class="anim_box">
+                <div class="anim_box abox_2"></div>
+            </div>
+
+            <div class="anim_box">
+                <div class="anim_box abox_3"></div>
+            </div>
+        </div>
+
+        <a href="#home" class="bar_item_special button_1 logo">JIA MAIN CHEESE</a>
+    </div>
+    
+    <div class="right_box">
+        <a href ="#about" class="bar_item button_1">About</a>
+        <a href="#menu" class="bar_item button_1">Menu</a>
+        <a href="#envelope" class="bar_item button_1">Contact</a>
+        <a href="#member" class="bar_item button_1">Members</a>
+    </div>
+
+    <button id="nav_button" style="display:none">
+    </button>
+
+</div>
+
+<details>
+    <summary></summary>
+    <nav class="menu">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#envelope">Contact</a>
+      <a href="#member">Members</a>
+    </nav>
+</details>
+
+
+
+<!-- Header -->
+
+<header class="header_image w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:375px" id="home">
+    <!-- <img class="w3-image" src="/images/header_img_1.png" width="1600" height="50"> -->
+</header>
+
+         
+
+<!-- Bar Navigation-->
+
+<!-- <div data-aos="fade-up">
+
+
+
+</div> -->
+<div class="Blog_Nav_box">
+    <div class="Blog_Nav_container">
+        <div class="blog blog_1">
+            <div class="image-container">
+                <img class="plate" src="./images/plate.png" alt="dish_1">
+                <img src="./images/dish_1.png" alt="pasta_1_photo" class="dish_photo">
+                <div class="dish_word_1">
+                    <h3>DISH 1</h3>
+                </div>
+                <div class="dish_word_2">
+                    <h3>DISH 1</h3>
+                </div>
+            </div>
+        </div>
+        <div class="blog blog_2">
+            <div class="image-container">
+                <img class="plate" src="./images/plate.png" alt="dish_1">
+                <img src="./images/plate_food/pizza.png" alt="pizza" class="dish_photo photo_2">
+                <div class="dish_word_1">
+                    <h3>DISH 2</h3>
+                </div>
+                <div class="dish_word_2">
+                    <h3>DISH 2</h3>
+                </div>
+            </div>
+        </div>
+        <div class="blog blog_3">
+            <div class="image-container">
+                <img class="plate" src="./images/plate.png" alt="dish_1">
+                <img src="./images/plate_food/tiramisu.png" alt="tiramisu" class="dish_photo">
+                <div class="dish_word_1">
+                    <h3>DISH 3</h3>
+                </div>
+                <div class="dish_word_2">
+                    <h3>DISH 3</h3>
+                </div>
+            </div>
+        </div>
+        <div class="blog blog_4">
+            <div class="image-container">
+                <img class="plate" src="./images/plate.png" alt="dish_1">
+                <img src="./images/plate_food/shrimp.png" alt="pasta_2" class="dish_photo photo_2">
+                <div class="dish_word_1">
+                    <h3>DISH 4</h3>
+                </div>
+                <div class="dish_word_2">
+                    <h3>DISH 4</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog blog_5">
+            <div class="image-container">
+                <img class="plate" src="./images/plate.png" alt="dish_1">
+                <img src="./images/plate_food/salad.png" alt="salad" class="dish_photo">
+                <div class="dish_word_1">
+                    <h3>DISH 5</h3>
+                </div>
+                <div class="dish_word_2">
+                    <h3>DISH 5</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1366px">
+
+  <!-- About Section -->
+  <section class="about_outer">
+    <div class="about_section">
+      <div class="about_pic">
+        <img class="logo_2" src="./images/logo2.png" alt="">
+        <div class="border"></div>
+        
+        <img class="onion" src="./images/onion.png" alt="">
+        <img class="noodle"src="./images/noodle.png" alt="" >
+      
+      </div>
+  
+      <div class="w3-col m6  about_word">
+        <h1 class="w3-center">ABOUT</h1><br>
+        <h5 class="w3-center">Tradition since 1889</h5>
+        <p class="w3-large content">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+        <!-- <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> -->
+      </div>
+    </div>
+    
+  </section>
+
+
+
+  <!-- </section>
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img src="./images/tablesetting2.jpg" class="w3-round w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+  <div class="w3-col m6 w3-padding-large">
+    <h1 class="w3-center">About </h1><br>
+    <h5 class="w3-center">Tradition since 1889</h5>
+    <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+    <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
+</div> 
+  
+  <hr> -->
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu<br><hr></h1><br>
+      <div class="food">
+        <h4><b>Salad</b></h4>
+        <p class="w3-text-grey"> 
+          Our salads are a refreshing blend of vibrant, seasonal ingredients designed to bring flavor, texture, and nourishment to every bite. Starting with crisp, leafy greens as a base, we layer in a variety of colorful vegetables like juicy tomatoes, crunchy cucumbers, and sweet bell peppers for a balanced taste profile. Each salad is thoughtfully crafted with a mix of toppings that may include creamy avocado, tangy cheeses, or toasted nuts and seeds, adding both richness and crunch.
+          <br>We offer a selection of dressings, from classic vinaigrettes to zesty citrus blends and creamy options, each chosen to enhance the freshness of the ingredients without overwhelming them. For a heartier meal, add protein options like grilled chicken, tender shrimp, or marinated tofu. Whether you’re seeking a light starter or a satisfying main, our salads provide a delicious and wholesome way to enjoy the best of each season’s bounty.</p>
+      </div>
+
+      <div class="food">
+        <h4><b>Pasta</b></h4>
+        <p class="w3-text-grey">Our Cheese Meat Pasta is the ultimate indulgence for anyone craving rich, hearty flavors. This dish combines tender pasta with savory, seasoned meat and a generous layer of creamy, melted cheese, creating a satisfying blend of textures and tastes in every bite. Each pasta shape is chosen to hold the robust meat sauce, made from a blend of slow-cooked tomatoes, aromatic herbs, and spices, providing a deep, comforting flavor that’s sure to please. The dish is then topped with a mix of cheeses, which melt into a creamy, golden layer that adds richness and a hint of sharpness.<br>
+          Finished with a sprinkle of fresh herbs for a burst of color and freshness, this pasta dish is a true comfort meal, perfect for anyone who loves the combination of cheese and meat. It’s an unforgettable blend of savory, cheesy goodness that will keep you coming back for more.</p>
+      </div>
+      <div class="food">
+        <h4><b>Risotto</b></h4>
+        <p class="w3-text-grey">Our Red Sauce Steak Risotto is a hearty, flavorful dish that blends tender beef with creamy risotto, all brought together by a rich, tangy tomato-based sauce. Each bite delivers a perfect balance of textures and flavors, starting with perfectly cooked risotto, which absorbs the vibrant flavors of the sauce and creates a soft, creamy foundation. The red sauce is crafted from ripe tomatoes, slow-simmered with garlic, herbs, and a hint of spice, adding depth and a touch of acidity that elevates every ingredient.<br>
+          Topping this delicious base, our steak is seared to perfection, locking in its natural juices and offering a tender, juicy contrast to the creamy risotto. Garnished with fresh basil and a light sprinkle of Parmesan, this Red Sauce Steak Risotto is both indulgent and comforting. It’s a satisfying dish that brings together Italian-inspired flavors and the richness of premium steak, perfect for any occasion.</p>
+      </div>
+      <div class="food">
+        <h4><b>Pizza</b></h4>
+        <p class="w3-text-grey">Our pizzas are a celebration of bold flavors and high-quality ingredients, crafted to satisfy every craving. Each pizza begins with a hand-tossed, perfectly baked crust—crispy on the outside, soft and chewy on the inside. We top it with a rich tomato sauce made from ripe, sun-kissed tomatoes, creating a flavorful base that complements the rest of the ingredients. Our cheeses are carefully selected for their meltability and rich taste, from the smooth, creamy mozzarella to the sharp, tangy Parmesan.<br>
+          Choose from a variety of toppings, whether you’re craving classic pepperoni, a vegetable medley, or a delicious combination of savory meats and fresh herbs. For a more adventurous bite, try our specialty pizzas, like the smoky BBQ chicken or the creamy white truffle. Finished with a sprinkle of fresh basil or a drizzle of olive oil, every pizza is a masterpiece, perfect for sharing or enjoying solo. Indulge in the timeless, comforting flavors of our delicious pizzas!</p>
+      </div>
+      <div class="food">
+        <h4><b>Dessert</b></h4>
+        <p class="w3-text-grey">Our cakes are the perfect blend of indulgence and artistry, crafted with the finest ingredients to offer a delightful experience in every bite. Each cake is made from scratch, using premium butter, rich cocoa, and fresh eggs to create a moist, flavorful base. We offer a variety of cakes to satisfy all tastes, from decadent chocolate layers to light, airy vanilla sponges, and even indulgent fruit-filled options.<br>
+          Our cakes are expertly frosted with silky smooth buttercream, velvety ganache, or whipped cream, depending on the flavor profile. Fresh seasonal fruits, nuts, and a dusting of powdered sugar or a sprinkle of edible flowers add a beautiful finishing touch to every slice. Whether you’re celebrating a special occasion or simply treating yourself, our cakes are the perfect way to add sweetness to your day. Every bite offers a delightful balance of flavors and textures, making our cakes a truly unforgettable dessert experience.</p>
+      </div>   
+    </div>
+    
+    <div class="food6">
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <label for="zoom-toggle-1">
+          <div class="food1">
+            <input type="checkbox" id="zoom-toggle-1">
+            <img src="./images/food1.jpg" class="zoomable w3-round w3-image w3-opacity-min zoom_big" alt="Menu" id="image" onclick="toggleZoom(this)">
+          </div>
+        </label>
+    </div>
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <label for="zoom-toggle-2">
+          <div class="food2">
+            <input type="checkbox" id="zoom-toggle-2">
+          <img src="./images/food2.jpg" class="zoomable w3-round w3-image w3-opacity-min zoom_big" alt="Menu" id="image" onclick="toggleZoom(this)">
+          </div>
+        </label>
+      </div>
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <label for="zoom-toggle-3">
+          <div class="food3">
+            <input type="checkbox" id="zoom-toggle-3">
+          <img src="./images/food3.jpg" class="zoomable w3-round w3-image w3-opacity-min zoom_big" alt="Menu" id="image" onclick="toggleZoom(this)">
+          </div>
+        </label>
+      </div>
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <label for="zoom-toggle-4">
+          <div class="food4">
+            <input type="checkbox" id="zoom-toggle-4">
+          <img src="./images/food4.jpg" class="zoomable w3-round w3-image w3-opacity-min zoom_big" alt="Menu" id="image" onclick="toggleZoom(this)">
+          </div>
+        </label>
+      </div>
+      <div class="w3-col m6 w3-padding-large w3-hide-small">
+        <label for="zoom-toggle-5">
+          <div class="food5">
+            <input type="checkbox" id="zoom-toggle-5">
+          <img src="./images/food5.jpg" class="zoomable w3-round w3-image w3-opacity-min zoom_big" alt="Menu" id="image" onclick="toggleZoom(this)">
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+   <!-- Contact Section -->
+   <div id="envelope">
+    <div id="flap"></div>
+      <form id="paper" class="paper">
+        <label class="fold">CONTACT US</label>
+        <label class="fold">Name</label>
+        <label class="fold"><input class="w3-input w3-padding-16" type="text"  required name="Name"></label>
+        <label class="fold">How many people</label>
+        <label class="fold"><input class="w3-input w3-padding-16" type="number"  required name="People"></label>
+        <label class="fold">Date and time</label>
+        <label class="fold"><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></label>
+        <label class="fold">Message \ Special requirements</label>
+        <label class="fold"><input class="w3-input w3-padding-16" type="text" required name="Message"></label>
+        
+        <span id="closeLetter" class="fold">SEND MESSAGE</span>
+      </form>
+
+         
+    
+    <div id="front"></div>
+  </div><!-- End #envelope -->
+
+  <script>
+
+function openEnvelope() {
+  const envelope = document.getElementById("envelope");
+  envelope.classList.add("opened");
+  // 其他開啟信封的動畫效果也可以加在這裡
+}
+
+
+    $('#envelope').click(function(){
+    $(this).addClass('opened');
+    
+      var folds = $('.fold', '#paper'); console.log(folds);
+      setTimeout(function(){
+        unfoldQ(folds,0);
+      }, 1750);
+    });
+
+  $('#closeLetter').click(function(e){
+    $('#envelope').removeClass('opened');
+    $('.unfolded').removeClass('unfolded');
+    e.stopPropagation();
+  });
+
+  function unfoldQ(elem,inx){
+    if(inx != elem.length){
+      console.log(elem[inx]);
+      $(elem[inx]).addClass('unfolded');
+      console.log('index: ' + inx);
+      inx = parseInt(inx)+1;
+      console.log('index: ' + inx);
+    
+      setTimeout(function(){
+        unfoldQ(elem,inx);
+        }, 500);
+    }
+  }
+
+  
+  </script>
+  
+<!-- End page content -->
+<!-- </div><p> Authorized by NSYSU students <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+
+<div class="footer">
+
+</div> -->
+<!-- Footer -->
+  <footer class="w3-center w3-padding-32 footer" >
+    <p> Authorized by NSYSU students <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  </footer>
+
+</body>
+</html>
