@@ -1,0 +1,305 @@
+
+.topic h1{
+    width:250px;
+    margin-bottom:0;
+}
+.topic h2{
+    margin-top: 100px;
+}
+
+/* 基本樣式 */
+.memberbox {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center; /* 使元素居中排列 */
+    gap: 20px; /* 增加元素間距 */
+}
+
+.memberup, .memberdown {
+    margin: 20px;
+}
+
+.img-box {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 240px;
+}
+
+.img-box.memberup img {
+    animation: slideDownIn 1s ease-out forwards;
+}
+.img-box.memberdown img {
+    animation: slideTopIn 1s ease-out forwards;
+}
+
+.img-box:hover img {
+    transform: scale(1.2);
+}
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* 讓文字內容垂直排列 */
+}
+
+.img-box:hover .overlay {
+    opacity: 1;
+}
+
+.word {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.introdution {
+    color: white;
+    font-size: 1em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 10px;
+}
+
+.memberbox .member h2 {
+    color: black;
+}
+
+/* 響應式設計 */
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 1366px) {
+    
+    .topic {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        display: inline-block; /* 這裡使用 inline-block 保證不換行 */
+        animation: slideLeft 2s forwards; /* 設置動畫名稱、時間和模式 */
+    }
+    
+    /* 定義從右移到左的動畫 */
+    @keyframes slideLeft {
+        from {
+            right: 0;
+        }
+        to {
+            right: calc(100% - 200px); /* 將 topic 元素移動到左邊 */
+        }
+    }
+    @keyframes slideDownIn {
+        from {
+            transform: translateY(-100%); /* 從視窗外上方開始 */
+        }
+        to {
+            transform: translateY(0); /* 進入原始位置 */
+        }
+    }
+    @keyframes slideTopIn {
+        from {
+            transform: translateY(100%); /* 從視窗外上方開始 */
+        }
+        to {
+            transform: translateY(0); /* 進入原始位置 */
+        }
+    }
+    .memberbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 98%;
+        height: px;
+        margin-top: 160px;
+    }
+    .memberbox img {
+        width: 320px;
+    }
+    .m{
+        flex-direction:row;
+        display:flex;
+    }
+    .img-box {
+        margin: 0;
+        width: 100%;
+        height: 595px;
+    }
+
+    .word {
+        font-size: 1em;
+    }
+
+    .introdution {
+        font-size: 0.7em;
+    }
+
+    .footer{
+        width:100%;
+        position: relative;
+        margin-top:240px;
+        height:300px;
+    }
+}
+@media (max-width: 1024px) {
+    .topic {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        display: inline-block; /* 這裡使用 inline-block 保證不換行 */
+        animation: slideLeft 2s forwards; /* 設置動畫名稱、時間和模式 */
+    }
+    /* 定義從右移到左的動畫 */
+    @keyframes slideLeft {
+        from {
+            right: 0;
+        }
+        to {
+            right: calc(100% - 200px); /* 將 topic 元素移動到左邊 */
+        }
+    }
+    @keyframes slideDownIn {
+        from {
+            transform: translateY(-100%); /* 從視窗外上方開始 */
+        }
+        to {
+            transform: translateY(0); /* 進入原始位置 */
+        }
+    }
+    @keyframes slideTopIn {
+        from {
+            transform: translateY(100%); /* 從視窗外上方開始 */
+        }
+        to {
+            transform: translateY(0); /* 進入原始位置 */
+        }
+    }
+    .memberbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+    
+    .img-box {
+        margin: 0; /* 左右加點間距，使圖片不緊貼邊緣 */
+        height: 400px; /* 保持圖片高度不變 */
+    }
+
+    .word {
+        font-size: 1em;
+    }
+
+    .introdution {
+        font-size: 0.7em;
+    }
+    .memberbox img{
+        width: 230px;
+    }
+
+    .footer{
+        width:100%;
+        position: relative;
+        margin-top:500px;
+        height:300px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    
+    .topic {
+        position: absolute;
+        left: 110px;
+        
+    }
+    .memberbox {
+        display: flex;
+        flex-direction: column; /* 主容器垂直排列 */
+        align-items: center; /* 置中對齊 */
+        margin-top: 100px;
+        height: 2500px;
+        justify-content: flex-start;
+    }
+
+    .m {
+        display: flex;
+        flex-direction: column; /* .m 內部垂直排列 */
+        align-items: center;
+        width: 100%; /* .m 寬度達到100% */
+    }
+
+    .memberbox img{
+        width: 325px;
+        height: 578px;
+    }
+    .img-box {
+        margin: 0;
+        width: 325px;
+        height: 578px;
+    }
+    
+
+    .word {
+        font-size: 0.8em;
+    }
+    .introdution {
+        font-size: 0.6em;
+    }
+    .overlay{
+        width: 100%;
+        height: 100%;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .footer{
+        width:100%;
+        position: relative;
+        margin-top:900px;
+        height:300px;
+    }
+    
+}
+
+ul.word_2{
+    font-size:20px;
+    font-family: "Chivo", serif;
+}
+
+p{
+    font-size:20px;
+    font-family: "Chivo", serif;
+}
+
+
+
+
